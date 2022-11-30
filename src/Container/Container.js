@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ContainerStyle from "./Container.module.css";
 import Details from '../Details/Details';
 import Questions from '../Questions/Questions';
-import firebase from "../../src/Firebase/Config";
+import { app, firestore } from '../../src/Firebase/Config';
 import { v4 as uuidv4 } from 'uuid';
 
  class Container extends Component {
