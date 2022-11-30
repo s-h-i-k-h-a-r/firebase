@@ -39,7 +39,7 @@ import { v4 as uuidv4 } from 'uuid';
    questions.coursea = event.target.coursea.value;
    questions.review = event.target.review.value;
    this.setState({questions});
-   const database = firebase.database();
+   const database = firestore.database();
    database.ref("survey/" + this.state.id).set({
   name:this.state.name,
   email:this.state.email,
